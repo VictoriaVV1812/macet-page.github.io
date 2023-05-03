@@ -82,7 +82,7 @@ body{
     font-size: 18px;
     line-height: 21px;
     text-decoration: none;
-    border-radius: 5px;
+    
 }
 
 .button:hover{
@@ -222,6 +222,9 @@ body{
 
 .main-text:hover{ 
     text-decoration: underline;
+    color: rebeccapurple;
+    font-weight: bolder;
+    font-size: 150%;
     
 }
 
@@ -231,19 +234,23 @@ body{
     position: relative;
 }
 
-.student_new{
-    width: 85px;
-    height: 20px;
-    background-color: #3AA828;
+.student_new::after{
+    position: absolute;
+    top: -12px;
+    right: -13px;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 94px;
+    height: 24px;
     color: #FFFFFF;
+    background: #3AA828;
+    border-radius: 20px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
-    position: absolute;
-    top: -5px;
-    right: -1px;
+    content: 'НОВИЧОК';
+   
 }
     
 
@@ -342,53 +349,23 @@ body{
 }
 
 .contant-page_name{
-    margin-top: -200px;
+    margin-top: -230px;
     font-size: 25px;
     margin-left: 400px;
     
 }
 
-.classname1:hover{
-    display: inline-block; 
-    overflow: hidden;
-    transition: 1s; 
-    display: block; 
-    transform: scale(1.2);
+.classname1, .classname2, .classname3{
+    margin-top: 20px;
+    padding-bottom: 70px;
 }
-    
-
-.classname2{
-    margin-top: 100px;
-
-}
-
-.classname2:hover{
-    display: inline-block; 
-    overflow: hidden;
-    transition: 1s; 
-    display: block; 
-    transform: scale(1.2);
-}
-    
-.classname3{
-    margin-top: 100px;
-}
-
-.classname3:hover{
-    display: inline-block; 
-    overflow: hidden;
-    transition: 1s; 
-    display: block; 
-    transform: scale(1.2);
-}
-    
-
+  
 
 /* Всплывающее окно */
 
 .popup{
     position: absolute;
-    margin-left: calc(50% - 502px / 2);
+   left: calc(50% - 500px / 2);
     margin-top: 157px;
     width: 500px;
     height: 418px;
@@ -520,14 +497,22 @@ body{
         padding-left: 16px;
         padding-right: 16px;  
     }
+
     .tagline1{
         text-align: center;
     }
     .students{
         justify-content: center;
     }
+    .student{
+        height: 300px;
+    }
     .content_about{
         text-align: center;
+    }
+    .img{
+        padding-top: 15px;
+        width: 820px;
     }
     .tagline3{
         text-align: center;
@@ -541,8 +526,8 @@ body{
 
      .popup{
         position: absolute;
-        left: calc(50% - 200px / 2);
-        right: calc(50% - 200px / 2);
+        left: calc(50% - 250px / 2);
+        right: calc(50% - 250px /2);
         width: 250px;
         top: 150px;
     }
@@ -560,6 +545,19 @@ body{
         margin-top: 70px;
         margin-left: 47px;
     }
+
+    
+
+    .classname1, .classname2, .classname3{
+        max-width: 70%;
+        margin: auto;
+    }
+    .contant-page_name{
+        margin: auto;
+        font-size: 20px;
+    }
+
+    
 }
 
 
