@@ -23,16 +23,39 @@
         </ul>
              <a class="button" href="#">Войти</a>
          </header>
+         <div class="all"> 
             <div class="contant-page">
-                    <img class="classname1" src="img/HTML5" alt="картинка HTML5">
-                    <p class="contant-page_name"> &mdash; Это язык разметки страницы (говорит браузеру, какие элементы <br> должны находиться на странице и в каком месте)</p> 
-                </div>
-                <div class="contant-page">
-                    <img class="classname2" src="img/CSS3.png" alt="картинка CSS3"> <p class="contant-page_name"> &mdash; Это код для описания стилей веб-страниц, отвечает за косметическую сторону</p> 
-                </div>
-                <div class="contant-page">
-                    <img class="classname3" src="img/JS.jpg" alt="картинка JS"> <p class="contant-page_name"> &mdash; Добавляет сайту функциональность и интерактивность</p> 
-                </div>
+            <img class="classname1" src="img/HTML5" alt="картинка HTML5">
+            <p class="contant-page_name"> &mdash; Это язык разметки страницы (говорит браузеру, какие элементы <br> должны находиться на странице и в каком месте)</p> 
+        </div>
+        <div class="contant-page">
+            <img class="classname2" src="img/CSS3.png" alt="картинка CSS3"> <p class="contant-page_name"> &mdash; Это код для описания стилей веб-страниц, отвечает за косметическую сторону</p> 
+        </div>
+        <div class="contant-page">
+            <img class="classname3" src="img/JS.jpg" alt="картинка JS"> 
+            <p class="contant-page_name"> &mdash; Добавляет сайту функциональность и интерактивность</p> 
+        </div>
+    </div>
+</div>
+           
+            <footer class="footer">
+                <p>2023 © <a class="footer_text" href="#">учебный центр</a></p>
+            </footer>
+
+            <div class="popup">
+                <form action="registration" action="#" >
+                    <h2 class="aside">Войти на сайт</h2>
+                    <input class="name" type="login" placeholder=" Логин">
+                    <input class="pass" type="password" placeholder=" Пароль">
+                    <a class="btn" href="#" >Войти</a>
+                </form>
             </div>
+            <script>
+                const popupEl = document.querySelector ('.popup');
+                const buttonEl = document.querySelector ('.button');
+                buttonEl.addEventListener('click', function (e) {
+                    popupEl.classList.toggle ('visible')
+                });
+            </script>
 </body>
 </html>
