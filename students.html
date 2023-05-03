@@ -35,7 +35,7 @@
                 <div class="student">
                     <img width="200" height="270" src="img/student.jpg" alt="student 1">
                     <p class="student_name">Мария Александровна</p>
-                    <p class="student_new">новичок</p>
+                    <p class="student_new"></p>
                 </div>
                 <div class="student">
                     <img width="200" height="270" src="img/student.jpg" alt="student 1">
@@ -54,5 +54,20 @@
         <footer class="footer">
             <p>2023 © <a class="footer_text" href="#">учебный центр</a></p>
         </footer>
+        <div class="popup">
+            <form action="registration" action="#" >
+                <h2 class="aside">Войти на сайт</h2>
+                <input class="name" type="login" placeholder=" Логин">
+                <input class="pass" type="password" placeholder=" Пароль">
+                <a class="btn" href="#" >Войти</a>
+            </form>
+        </div>
+        <script>
+            const popupEl = document.querySelector ('.popup');
+            const buttonEl = document.querySelector ('.button');
+            buttonEl.addEventListener('click', function (e) {
+                popupEl.classList.toggle ('visible')
+            });
+        </script>
 </body>
 </html>
